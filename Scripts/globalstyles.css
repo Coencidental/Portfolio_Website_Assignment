@@ -40,6 +40,7 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  margin-top: 2rem;
 }
 
 .ParallaxContainer {
@@ -236,6 +237,9 @@
     background-image: url(../Images/face2.svg);
     background-size: 55%;
     background-position: top;
+  }
+  .MainContainer {
+    margin-top: none;
   }
 }
 /*# sourceMappingURL=globalstyles.css.map */
