@@ -145,8 +145,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 0%;
+  padding-right: 0%;
   height: 100%;
   max-width: 40px;
   -webkit-transition-duration: 0.05s;
