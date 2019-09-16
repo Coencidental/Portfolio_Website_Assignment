@@ -55,13 +55,12 @@
   height: 80vh;
   -webkit-transform: translateZ(-1px) scale(2);
           transform: translateZ(-1px) scale(2);
-  z-index: -1;
+  z-index: 1;
   top: 0px;
   background-image: url(../Images/face2.svg);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  opacity: 1/var(--parallaxopacity);
 }
 
 ::-webkit-scrollbar {
