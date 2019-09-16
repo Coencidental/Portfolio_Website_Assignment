@@ -145,10 +145,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
   height: 100%;
-  width: auto;
+  max-width: 40px;
   -webkit-transition-duration: 0.05s;
           transition-duration: 0.05s;
   font-size: 1.5rem;
