@@ -43,8 +43,8 @@
 }
 
 .ParallaxContainer {
-  -webkit-perspective: -1px;
-          perspective: -1px;
+  -webkit-perspective: 1px;
+          perspective: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
