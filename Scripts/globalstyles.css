@@ -35,11 +35,9 @@
 }
 
 .MainContainer {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
 }
 
 .ParallaxContainer {

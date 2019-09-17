@@ -2,14 +2,14 @@ function resizeHeaderOnScroll() {
   
   let distanceY = mainContainer.scrollTop;
 
-  const percentage = clamp(distanceY / 500.0, 0, 3);
+  const percentage = clamp(distanceY / 500.0, 0, 1);
   document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));
 
 
   for(var i = 0; i < headerEls.length; i++){
     headerEls[i].style.width = `${parseInt(widths[i] * percentage * 1.5)}px`
-    headerEls[i].style.paddingLeft = `${parseInt(paddingsLeft[i] * percentage)}px`
-    headerEls[i].style.paddingRight = `${parseInt(paddingsRight[i] * percentage)}px`
+    // headerEls[i].style.paddingLeft = `${parseInt(paddingsLeft[i] * percentage)}px`
+    // headerEls[i].style.paddingRight = `${parseInt(paddingsRight[i] * percentage)}px`
   }
 
   
