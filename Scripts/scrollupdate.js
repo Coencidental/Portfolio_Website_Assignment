@@ -1,6 +1,7 @@
 function resizeHeaderOnScroll() {
+  let distanceY = Math.max(window.pageYOffset, mainContainer.scrollTop)
   
-  let distanceY = mainContainer.scrollTop;
+  // mainContainer.scrollTop;
 
   const percentage = clamp(distanceY / 500.0, 0, 1);
   document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));
@@ -44,5 +45,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   mainContainer = document.getElementsByClassName("MainContainer")[0]
   mainContainer.addEventListener('scroll', resizeHeaderOnScroll)
-  $(document.body).on('touchmove', resizeHeaderonScroll); 
+  // $(document.body).on('touchmove', resizeHeaderonScroll); 
+  mainContainer.addEventListener('touchmove', resizeHeaderOnScroll)
 });
