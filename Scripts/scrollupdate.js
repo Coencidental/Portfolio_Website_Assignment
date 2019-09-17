@@ -54,4 +54,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
   mainContainer.addEventListener('scroll', resizeHeaderOnScroll)
   // $(document.body).on('touchmove', resizeHeaderonScroll); 
   mainContainer.addEventListener('touchmove', resizeHeaderOnScroll)
+  document.body.addEventListener('touchmove', resizeHeaderOnScroll)
 });
