@@ -1,12 +1,13 @@
 function resizeHeaderOnScroll() {
   let distanceY = Math.max(document.body.scrollTop, mainContainer.scrollTop)
-  
   // window.pageYOffset
   // mainContainer.scrollTop;
+  
+
 
   const percentage = clamp(distanceY / 400.0, 0, 1);
-
-  
+  // document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', percentage);
+  document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', clamp((0.01/percentage*10), 0, 1));
 
   document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));
 
@@ -49,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     headerEls[i].style.paddingRight = "0"
   }
   mainContainer = document.getElementsByClassName("MainContainer")[0]
+  parallaxopacity = document.getElementsByClassName("ParallaxContainer")[0]
   mainContainer.addEventListener('scroll', resizeHeaderOnScroll)
   // $(document.body).on('touchmove', resizeHeaderonScroll); 
   mainContainer.addEventListener('touchmove', resizeHeaderOnScroll)
