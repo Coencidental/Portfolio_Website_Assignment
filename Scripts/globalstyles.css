@@ -148,6 +148,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+  max-width: 100%;
   -webkit-transition-duration: 0.05s;
           transition-duration: 0.05s;
   font-size: 1.5rem;
@@ -198,11 +202,11 @@
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   z-index: 20;
-  color: rgba(255, 0, 0, 0.842);
+  color: rgba(179, 0, 0, 0.842);
 }
 
 .fa:hover {
-  color: #460000;
+  color: white;
 }
 
 .MediaLinks {
