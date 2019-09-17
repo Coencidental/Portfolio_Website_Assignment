@@ -13,10 +13,16 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #371E30;
+  padding: none;
+  margin: none;
+}
+
 .topbar {
   position: sticky;
   position: -webkit-sticky;
-  background-color: #fafafa;
+  background-color: #d8d8d8;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,13 +37,14 @@
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 10;
-  background-color: #fafafa;
+  background-color: #d8d8d8;
 }
 
 .MainContainer {
   height: 100vh;
   overflow-x: hidden !important;
   overflow-y: scroll !important;
+  background-color: #d8d8d8;
 }
 
 .ParallaxContainer {
@@ -66,7 +73,7 @@
           transform: translateZ(-1px) scale(2);
   z-index: 1;
   top: 0px;
-  background-image: url(../Images/face2.svg);
+  background-image: url(../Images/facefinal.svg);
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -85,7 +92,7 @@
   position: relative;
   z-index: 1;
   padding-top: 0;
-  background-color: white;
+  background-color: #d8d8d8;
   border-top: 0.25rem solid gray;
 }
 
@@ -102,7 +109,7 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-color: #fafafa;
+  background-color: #d8d8d8;
   border-radius: 0.25rem;
   width: auto;
 }
@@ -217,11 +224,23 @@
 }
 
 .fa:hover {
-  color: #3700ff;
+  color: #ea4335;
+}
+
+.fa-github {
+  color: #6e5494;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.fa-envelope-o {
+  color: black;
 }
 
 .MediaLinks {
-  background-color: #fafafa;
+  background-color: #d8d8d8;
   height: auto;
   width: 100vw;
   display: -webkit-box;
@@ -313,8 +332,8 @@
             flex-direction: row;
   }
   .ParallaxContainer {
-    background-image: url(../Images/face2.svg);
-    background-size: 55%;
+    background-image: url(../Images/facefinal.svg);
+    background-size: contain;
     background-position: top;
   }
   .ParallaxContainer p {
