@@ -7,7 +7,7 @@ function resizeHeaderOnScroll() {
 
 
   for(var i = 0; i < headerEls.length; i++){
-    headerEls[i].style.width = `${parseInt(widths[i] * percentage * 1.5)}px`
+    headerEls[i].style.width = `${parseInt(widths[i] * percentage)}px`
     // headerEls[i].style.paddingLeft = `${parseInt(paddingsLeft[i] * percentage)}px`
     // headerEls[i].style.paddingRight = `${parseInt(paddingsRight[i] * percentage)}px`
   }
@@ -44,4 +44,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   mainContainer = document.getElementsByClassName("MainContainer")[0]
   mainContainer.addEventListener('scroll', resizeHeaderOnScroll)
+  $(document.body).on('touchmove', resizeHeaderonScroll); 
 });
