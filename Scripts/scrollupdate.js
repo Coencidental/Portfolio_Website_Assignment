@@ -28,7 +28,8 @@ var paddingsLeft = []
 var paddingsRight = []
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  headerEls = document.getElementsByClassName('nav-link')
+  // headerEls = document.getElementsByClassName('nav-link')
+  headerEls = document.getElementsByClassName('navbar_linkbox')
   for(var i = 0; i < headerEls.length; i++){
     var width = window.getComputedStyle(headerEls[i], null).getPropertyValue('width')
     widths.push(parseInt(width.slice(0, width.length - 2)))
