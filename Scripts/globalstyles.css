@@ -7,11 +7,9 @@
   padding: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
   font-family: 'Raleway', sans;
   border: none;
   text-decoration: none;
-  -webkit-overflow-scrolling: scroll;
 }
 
 .topbar {
@@ -106,7 +104,6 @@
   background-color: #fafafa;
   border-radius: 0.25rem;
   width: auto;
-  -webkit-overflow-scrolling: scroll;
 }
 
 #navbar {
@@ -156,6 +153,7 @@
           transition-duration: 0.05s;
   font-size: 1.5rem;
   color: #575757;
+  overflow: hidden;
 }
 
 .logo-full > * {

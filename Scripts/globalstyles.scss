@@ -9,11 +9,9 @@ $offwhite: rgb(250, 250, 250);
   margin: none;
   padding: none;
   box-sizing: border-box;
-  overflow: hidden;
   font-family: 'Raleway', sans;
   border: none;
   text-decoration: none;
-  -webkit-overflow-scrolling: scroll;
 }
 
 .topbar {
@@ -89,7 +87,6 @@ $offwhite: rgb(250, 250, 250);
   background-color: $offwhite;
   border-radius: 0.25rem;
   width: auto;
-  -webkit-overflow-scrolling: scroll;
 }
 
 
@@ -123,6 +120,7 @@ $offwhite: rgb(250, 250, 250);
   transition-duration: 0.05s;
   font-size: 1.5rem;
   color: rgb(87, 87, 87);
+  overflow: hidden;
 }
 
 
