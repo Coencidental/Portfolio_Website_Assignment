@@ -11,6 +11,7 @@
   font-family: 'Raleway', sans;
   border: none;
   text-decoration: none;
+  -webkit-overflow-scrolling: scroll;
 }
 
 .topbar {
@@ -105,6 +106,7 @@
   background-color: #fafafa;
   border-radius: 0.25rem;
   width: auto;
+  -webkit-overflow-scrolling: scroll;
 }
 
 #navbar {
