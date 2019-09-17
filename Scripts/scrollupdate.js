@@ -1,7 +1,9 @@
 function resizeHeaderOnScroll() {
-  const distanceY = mainContainer.scrollTop
-  const percentage = Math.min(Math.max((distanceY / 500.0), 0.0), 1.0)
-  document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', 0.01/percentage*10);
+  
+  let distanceY = mainContainer.scrollTop;
+  
+  const percentage = clamp(distanceY / 500.0, 0, 1)
+  document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp(0.01/percentage*10), 0, 1);
   
   for(var i = 0; i < headerEls.length; i++){
     headerEls[i].style.width = `${parseInt(widths[i] * percentage * 1.5)}px`
@@ -10,6 +12,10 @@ function resizeHeaderOnScroll() {
   }
 
   
+}
+
+var clamp = (number, min, max) => {
+  return Math.min(Math.max(number, min), max)
 }
 
 var headerEls;
