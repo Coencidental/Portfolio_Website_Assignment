@@ -219,17 +219,7 @@ body {
 
 }
 
-.contactcard {
-  width: 80%;
-  height: 20%;
-  text-align: center;
-  border: 1px solid red;
-  transition: all 0.5s;
 
-  &:hover {
-    height: 40%
-  }
-}
 
 .blueback {
   background-color: #3b5998;
@@ -241,6 +231,20 @@ body {
 
 .scroll-auto {
   -webkit-overflow-scrolling: auto;
+}
+
+.contactcard {
+  width: 80%;
+  height: 20%;
+  text-align: center;
+  border: 1px solid red;
+  transition: all 0.5s;
+  opacity: 0.5;
+
+  &:hover {
+    height: 40%
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 700px) {

@@ -10,7 +10,7 @@ function resizeHeaderOnScroll() {
     // document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));
   
   
-  document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', clamp((Math.min(percentage, 100)), 0, 1));
+  document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', 1 - 1.5 * (clamp((Math.min(percentage, 100)), 0, 1)));
 
   for(var i = 0; i < headerEls.length; i++){
     headerEls[i].style.width = `${parseInt(widths[i] * percentage)}px`
