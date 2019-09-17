@@ -2,6 +2,7 @@
   --parallaxopacity: 0;
 }
 
+
 * {
   margin: none;
   padding: none;
@@ -40,7 +41,6 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  margin-top: 2rem;
 }
 
 .ParallaxContainer {
@@ -107,12 +107,17 @@
       align-content: center;
   background-color: #fafafa;
   border-radius: 0.25rem;
+  width: auto;
 }
 
 #navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border-top: 0.25rem solid gray;
   border-bottom: 0.25rem solid gray;
 }
@@ -122,7 +127,6 @@
   display: grid;
   -ms-grid-columns: auto 1fr auto 1fr auto;
       grid-template-columns: auto 1fr auto 1fr auto;
-  width: 100%;
 }
 
 .nav-link:hover {
@@ -145,10 +149,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 0%;
-  padding-right: 0%;
-  height: 100%;
-  max-width: 40px;
   -webkit-transition-duration: 0.05s;
           transition-duration: 0.05s;
   font-size: 1.5rem;
@@ -189,11 +189,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem 0;
-  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
 }
 
 .fa {
