@@ -2,7 +2,6 @@
   --parallaxopacity: 0;
 }
 
-
 * {
   margin: none;
   padding: none;
@@ -196,13 +195,14 @@
 }
 
 .fa {
-  color: #ad0000;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  z-index: 20;
+  color: rgba(255, 0, 0, 0.842);
 }
 
-.fa :hover {
-  color: #868686;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+.fa:hover {
+  color: #460000;
 }
 
 .MediaLinks {
