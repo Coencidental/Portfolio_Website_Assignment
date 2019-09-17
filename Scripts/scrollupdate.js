@@ -2,9 +2,8 @@ function resizeHeaderOnScroll() {
   
   let distanceY = mainContainer.scrollTop;
 
-  const percentage = clamp(distanceY / 500.0, 0, 1);
+  const percentage = clamp(distanceY / 500.0, 0, 3);
   document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));
-  
 
 
   for(var i = 0; i < headerEls.length; i++){
