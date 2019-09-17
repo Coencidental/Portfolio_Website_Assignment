@@ -10,6 +10,7 @@
   font-family: 'Raleway', sans;
   border: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .topbar {
@@ -175,10 +176,20 @@
 }
 
 .logo-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 4rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 1;
 }
 
@@ -195,6 +206,7 @@
           justify-content: center;
   padding: 1rem;
   max-width: 100vw;
+  overflow: hidden;
 }
 
 .fa {
