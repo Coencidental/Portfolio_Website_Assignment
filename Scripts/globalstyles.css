@@ -201,7 +201,7 @@
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   z-index: 20;
-  color: rgba(179, 0, 0, 0.842);
+  color: rgba(160, 160, 160, 0.842);
 }
 
 .fa:hover {
