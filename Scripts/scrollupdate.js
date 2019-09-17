@@ -1,6 +1,7 @@
 function resizeHeaderOnScroll() {
-  let distanceY = Math.max(window.pageYOffset, mainContainer.scrollTop)
+  let distanceY = Math.max(document.body.scrollTop, mainContainer.scrollTop)
   
+  // window.pageYOffset
   // mainContainer.scrollTop;
 
   const percentage = clamp(distanceY / 400.0, 0, 1);
