@@ -7,10 +7,7 @@ function resizeHeaderOnScroll() {
 
   const percentage = clamp(distanceY / 700.0, 0, 1);
   // document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', percentage);
-    // document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));
-  document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', 1);
-  document.getElementsByClassName("invert")[0].style.setProperty('filter', `invert(0%)`);
-  
+    // document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));  
   document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', 1 - 1.5 * (clamp((Math.min(percentage, 100)), 0, 1)));
   document.getElementsByClassName("invert")[0].style.setProperty('filter', `invert(${100 * (clamp((Math.min(percentage, 100)), 0, 1))}%)`);
   for(var i = 0; i < headerEls.length; i++){
@@ -51,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     headerEls[i].style.paddingRight = "0"
   }
 
-
-
+  document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', 1);
+  document.getElementsByClassName("invert")[0].style.setProperty('filter', `invert(0%)`);
   mainContainer = document.getElementsByClassName("MainContainer")[0]
   parallaxopacity = document.getElementsByClassName("ParallaxContainer")[0]
   mainContainer.addEventListener('scroll', resizeHeaderOnScroll)
