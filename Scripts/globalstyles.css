@@ -127,10 +127,13 @@ body {
 }
 
 #navbar > .logo-full {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 1fr auto 1fr auto;
-      grid-template-columns: auto 1fr auto 1fr auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .nav-link:hover {
@@ -295,19 +298,6 @@ body {
       align-content: center;
 }
 
-.contactcard {
-  width: 80%;
-  height: 20%;
-  text-align: center;
-  border: 1px solid red;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.contactcard:hover {
-  height: 40%;
-}
-
 .blueback {
   background-color: #3b5998;
 }
@@ -318,6 +308,21 @@ body {
 
 .scroll-auto {
   -webkit-overflow-scrolling: auto;
+}
+
+.contactcard {
+  width: 80%;
+  height: 20%;
+  text-align: center;
+  border: 1px solid red;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0.5;
+}
+
+.contactcard:hover {
+  height: 40%;
+  opacity: 1;
 }
 
 @media only screen and (min-width: 700px) {

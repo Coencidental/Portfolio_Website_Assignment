@@ -5,7 +5,7 @@ function resizeHeaderOnScroll() {
   
 
 
-  const percentage = clamp(distanceY / 600.0, 0, 1);
+  const percentage = clamp(distanceY / 700.0, 0, 1);
   // document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', percentage);
     // document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));
   
@@ -49,6 +49,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     headerEls[i].style.paddingLeft = "0"
     headerEls[i].style.paddingRight = "0"
   }
+
+
+
   mainContainer = document.getElementsByClassName("MainContainer")[0]
   parallaxopacity = document.getElementsByClassName("ParallaxContainer")[0]
   mainContainer.addEventListener('scroll', resizeHeaderOnScroll)
