@@ -10,6 +10,7 @@ $scrollread: var(--parallaxopacity);
 $rubble: #371E30;
 $offwhite: rgb(219, 219, 219);
 $linkgrey: rgb(49, 49, 49);
+$redfade: radial-gradient(#750000, #e00000);
 
 * {
   margin: none;
@@ -49,6 +50,7 @@ body {
   height: 100vh;
   overflow-x: hidden !important;
   overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
   background-color: $linkgrey;
   // margin-top: 2rem;
 }
@@ -220,16 +222,7 @@ body {
   transform: rotate(180deg);
 }
 
-.contactme_container {
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
 
-}
 
 .blueback {
   background-color: #3b5998;
@@ -243,18 +236,9 @@ body {
   -webkit-overflow-scrolling: auto;
 }
 
-.contactcard {
-  width: 100%;
-  height: 20%;
-  text-align: center;
-  border: 1px solid red;
-  transition: all 0.5s;
-  opacity: 0.75;
 
-  &:hover {
-    height: 40%;
-    opacity: 1;
-  }
+.inverted {
+  filter: invert(100%);
 }
 
 @media only screen and (min-width: 700px) {
@@ -269,8 +253,8 @@ body {
 
   .ParallaxContainer {
   background-image: url(../Images/eyes.svg);
-  background-size: 50%;
-  background-position: center;
+  background-size: 60%;
+  background-position: right;
 
   p {
     padding-right: 25%;
