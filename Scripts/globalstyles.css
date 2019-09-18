@@ -2,6 +2,11 @@
   --parallaxopacity: 0;
 }
 
+.invert {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 * {
   margin: none;
   padding: none;
@@ -317,7 +322,7 @@ body {
   border: 1px solid red;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .contactcard:hover {

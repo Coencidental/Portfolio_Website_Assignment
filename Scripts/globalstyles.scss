@@ -2,6 +2,10 @@
   --parallaxopacity: 0;
 }
 
+.invert {
+  filter: invert(100%);
+}
+
 $scrollread: var(--parallaxopacity);
 $rubble: #371E30;
 $offwhite: rgb(216, 216, 216);
@@ -244,7 +248,7 @@ body {
   text-align: center;
   border: 1px solid red;
   transition: all 0.5s;
-  opacity: 0.5;
+  opacity: 0.75;
 
   &:hover {
     height: 40%;
