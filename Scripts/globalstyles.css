@@ -129,6 +129,9 @@ body {
           flex-direction: row;
   border-top: 0.25rem solid gray;
   border-bottom: 0.25rem solid gray;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #navbar > .logo-full {
