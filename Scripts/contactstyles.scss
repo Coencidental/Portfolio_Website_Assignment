@@ -18,19 +18,22 @@
   transition: all 0.5s;
   opacity: 0.5;
   font-size: 4rem;
-  padding-top: 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
+  align-content: center;
   width: 50%;
   height: 50%;
 
   &:hover {
-    // height: 50%;
-    // width: 100%;
+    transform: scale(1.05);
+    z-index: 2;
     opacity: 1;
+  }
+
+  span {
+    margin: auto 0;
   }
 }
 
@@ -41,7 +44,7 @@
   // flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  // align-content: center;
+  align-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
 
@@ -58,11 +61,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 0.5rem solid $rubble;
+  border: 0.5rem solid darkslategrey;
 }
 
 .blogpost {
   width: 100%;
+  height: 20%;
   height: 4rem;
   text-align: center;
+  border-bottom: 0.5rem solid darkslategrey;
 }
