@@ -8,7 +8,9 @@
 
 $scrollread: var(--parallaxopacity);
 $rubble: #371E30;
-$offwhite: rgb(216, 216, 216);
+$offwhite: rgb(219, 219, 219);
+$linkgrey: rgb(49, 49, 49);
+
 * {
   margin: none;
   padding: none;
@@ -46,14 +48,13 @@ body {
   // transform-style: preserve-3d;
   height: 100vh;
   overflow-x: hidden !important;
-  overflow-y: scroll !important;
-  background-color: $offwhite;
+  overflow-y: auto !important;
+  background-color: $linkgrey;
   // margin-top: 2rem;
 }
 
 // Parallax content is styled by this class
 .ParallaxContainer {
-  perspective: 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,7 +64,7 @@ body {
   position: relative;
   height: 72vh;
   transform: translateZ(-1px) scale(2);
-  z-index: 1;
+  z-index: -1;
   top: 0px;
   background-image: url(../Images/facefinal.svg);
   background-size: 125%;
@@ -125,7 +126,7 @@ body {
 
 // 
 .nav-link:hover {
-  background-color: darkgrey;
+  background-color: $linkgrey;
   transition-duration: 0.5s;
 }
 
@@ -174,23 +175,23 @@ body {
 .fa {
   transition: color 0.5s;
   z-index: 2;
-  color: rgba(160, 160, 160, 0.842);
   &:hover {
-    color: #ea4335;
+    color: #000000;
   }
+  color: $rubble;
 }
 
-.fa-github {
-  color: #6e5494;
-}
+// .fa-github {
+//   color: #91ab6b;
+// }
 
-.fa-linkedin {
-  color: #0077b5;
-}
+// .fa-linkedin {
+//   color: #ff884a;
+// }
 
-.fa-envelope-o {
-  color: black;
-}
+// .fa-envelope-o {
+//   color: #06ffff;
+// }
 
 .MediaLinks {
   background-color: $offwhite;  
@@ -230,8 +231,6 @@ body {
 
 }
 
-
-
 .blueback {
   background-color: #3b5998;
 }
@@ -269,9 +268,9 @@ body {
   }
 
   .ParallaxContainer {
-  background-image: url(../Images/facefinal.svg);
-  background-size: contain;
-  background-position: top;
+  background-image: url(../Images/eyes.svg);
+  background-size: 50%;
+  background-position: center;
 
   p {
     padding-right: 25%;

@@ -27,7 +27,7 @@ body {
 .topbar {
   position: -webkit-sticky;
   position: sticky;
-  background-color: #d8d8d8;
+  background-color: #dbdbdb;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,19 +42,17 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 2;
-  background-color: #d8d8d8;
+  background-color: #dbdbdb;
 }
 
 .MainContainer {
   height: 100vh;
   overflow-x: hidden !important;
-  overflow-y: scroll !important;
-  background-color: #d8d8d8;
+  overflow-y: auto !important;
+  background-color: #313131;
 }
 
 .ParallaxContainer {
-  -webkit-perspective: 1px;
-          perspective: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +74,7 @@ body {
   height: 72vh;
   -webkit-transform: translateZ(-1px) scale(2);
           transform: translateZ(-1px) scale(2);
-  z-index: 1;
+  z-index: -1;
   top: 0px;
   background-image: url(../Images/facefinal.svg);
   background-size: 125%;
@@ -97,7 +95,7 @@ body {
   position: relative;
   z-index: 1;
   padding-top: 0;
-  background-color: #d8d8d8;
+  background-color: #dbdbdb;
   border-top: 0.25rem solid gray;
 }
 
@@ -114,7 +112,7 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-color: #d8d8d8;
+  background-color: #dbdbdb;
   border-radius: 0.25rem;
   width: auto;
 }
@@ -148,7 +146,7 @@ body {
 }
 
 .nav-link:hover {
-  background-color: darkgrey;
+  background-color: #313131;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
@@ -234,27 +232,15 @@ body {
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   z-index: 2;
-  color: rgba(160, 160, 160, 0.842);
+  color: #371E30;
 }
 
 .fa:hover {
-  color: #ea4335;
-}
-
-.fa-github {
-  color: #6e5494;
-}
-
-.fa-linkedin {
-  color: #0077b5;
-}
-
-.fa-envelope-o {
-  color: black;
+  color: #000000;
 }
 
 .MediaLinks {
-  background-color: #d8d8d8;
+  background-color: #dbdbdb;
   height: auto;
   width: 100vw;
   display: -webkit-box;
@@ -348,9 +334,9 @@ body {
             flex-direction: row;
   }
   .ParallaxContainer {
-    background-image: url(../Images/facefinal.svg);
-    background-size: contain;
-    background-position: top;
+    background-image: url(../Images/eyes.svg);
+    background-size: 50%;
+    background-position: center;
   }
   .ParallaxContainer p {
     padding-right: 25%;
