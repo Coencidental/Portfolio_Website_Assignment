@@ -331,7 +331,7 @@ body {
 }
 
 .portfolio {
-  background-color: #dbdbdb;
+  background-color: #313131;
   height: 80vh;
   width: 90vw;
   margin: 0 auto;
@@ -339,6 +339,7 @@ body {
 
 .skillbar {
   width: 100%;
+  height: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,7 +353,6 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: #b9a4a4;
-  padding: 2rem 0;
   border-bottom: 0.25rem solid #371E30;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
@@ -365,10 +365,13 @@ body {
 .skilldesc {
   width: 75%;
   text-align: center;
+  padding-left: 2rem;
+  background-color: #a18f8f;
 }
 
 .skilltile {
   width: 25%;
+  height: auto;
   font-size: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,5 +383,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.skilltile span {
+  margin: auto 0;
+}
+
+.skilltile img {
+  height: 65%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=portfoliostyles.css.map */

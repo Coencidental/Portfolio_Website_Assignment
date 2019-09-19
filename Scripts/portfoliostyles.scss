@@ -3,7 +3,7 @@
 
 
 .portfolio {
-  background-color: $offwhite;
+  background-color: $linkgrey;
   height: 80vh;
   width: 90vw;
   margin: 0 auto;
@@ -11,12 +11,13 @@
 
 .skillbar {
   width: 100%;
+  height: 25%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
   background-color: $stone;
-  padding: 2rem 0;
+  // padding: 2rem 0;
   border-bottom: 0.25rem solid $rubble;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
@@ -29,12 +30,25 @@
 .skilldesc {
   width: 75%;
   text-align: center;
+  padding-left: 2rem;
+  background-color: rgb(161, 143, 143);
 }
 
 .skilltile {
   width: 25%;
+  height: auto;
   font-size: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  span {
+    margin: auto 0;
+  }
+
+  img {
+    height: 65%;   
+    align-self: center;
+    // padding-bottom: 0.5rem;
+  }
 }
