@@ -1,3 +1,40 @@
+@import "globalstyles.scss";
+
+
+
 .portfolio {
-  background-color: white;
+  background-color: $offwhite;
+  height: 80vh;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.skillbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: $stone;
+  padding: 2rem 0;
+  border-bottom: 0.25rem solid $rubble;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+
+  &:first-of-type {
+    border-top: 0.25rem solid $rubble;
+  }
+}
+
+.skilldesc {
+  width: 75%;
+  text-align: center;
+}
+
+.skilltile {
+  width: 25%;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

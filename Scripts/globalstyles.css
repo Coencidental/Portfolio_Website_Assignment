@@ -296,6 +296,12 @@ body {
 
 @media only screen and (min-width: 700px) {
   .nav-link {
+    padding: 0 5.5rem 0 5.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav-link {
     padding-left: 5.5rem;
     padding-right: 5.5rem;
   }

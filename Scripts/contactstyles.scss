@@ -27,7 +27,7 @@
   height: 50%;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scaleX(1.05);
     z-index: 2;
     opacity: 1;
   }
@@ -70,4 +70,13 @@
   height: 4rem;
   text-align: center;
   border-bottom: 0.5rem solid darkslategrey;
+  margin: auto 0;
+
+  h3 {
+    text-decoration: none;
+  }
+}
+
+.topbar {
+  z-index: 4;
 }

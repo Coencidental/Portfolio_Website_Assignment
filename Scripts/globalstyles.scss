@@ -11,6 +11,7 @@ $rubble: #371E30;
 $offwhite: rgb(219, 219, 219);
 $linkgrey: rgb(49, 49, 49);
 $redfade: radial-gradient(#750000, #e00000);
+$stone: rgb(185, 164, 164);
 
 * {
   margin: none;
@@ -242,6 +243,14 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
+  .nav-link {
+    padding: 0 5.5rem 0 5.5rem;
+  }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
   .nav-link {
     padding-left: 5.5rem;
     padding-right: 5.5rem;
