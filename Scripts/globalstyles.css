@@ -312,9 +312,9 @@ body {
             flex-direction: row;
   }
   .ParallaxContainer {
-    background-image: url(../Images/eyes.svg);
-    background-size: 60%;
-    background-position: right;
+    background-image: url(../Images/facefinal.svg);
+    background-size: 50%;
+    background-position: center;
   }
   .ParallaxContainer p {
     padding-right: 25%;

@@ -16,7 +16,7 @@
 .contactcard {
   text-align: center;
   transition: all 0.5s;
-  opacity: 0.5;
+  opacity: 0.75;
   font-size: 4rem;
   margin: 0 auto;
   display: flex;
@@ -27,13 +27,18 @@
   height: 50%;
 
   &:hover {
-    transform: scaleX(1.05);
-    z-index: 2;
+    // transform: scaleX(1.05);
+    // z-index: 2;
     opacity: 1;
   }
 
+  a {
+    width: 100%;
+    height: 100%;
+  }
+
   span {
-    margin: auto 0;
+    align-self: center;
   }
 }
 

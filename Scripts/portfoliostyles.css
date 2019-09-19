@@ -312,9 +312,9 @@ body {
             flex-direction: row;
   }
   .ParallaxContainer {
-    background-image: url(../Images/eyes.svg);
-    background-size: 60%;
-    background-position: right;
+    background-image: url(../Images/facefinal.svg);
+    background-size: 50%;
+    background-position: center;
   }
   .ParallaxContainer p {
     padding-right: 25%;
@@ -331,7 +331,7 @@ body {
 }
 
 .portfolio {
-  background-color: #313131;
+  background-color: #b9a4a4;
   height: 80vh;
   width: 90vw;
   margin: 0 auto;
@@ -371,7 +371,6 @@ body {
 
 .skilltile {
   width: 25%;
-  height: auto;
   font-size: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,10 +382,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .skilltile span {
-  margin: auto 0;
+  margin: auto;
 }
 
 .skilltile img {
@@ -394,5 +395,10 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.skilltile .coderacademy {
+  width: 30%;
+  height: auto;
 }
 /*# sourceMappingURL=portfoliostyles.css.map */

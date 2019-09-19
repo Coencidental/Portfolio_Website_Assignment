@@ -5,7 +5,7 @@ function resizeHeaderOnScroll() {
   
 
 
-  const percentage = clamp(distanceY / (clamp(screen.width, 450, 800)), 0, 1);
+  const percentage = clamp(distanceY / (clamp(screen.width, 450, 500)), 0, 1);
   // document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', percentage);
     // document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));  
   document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', 1 - (clamp((Math.min(percentage, 100)), 0, 1)));

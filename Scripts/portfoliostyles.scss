@@ -3,7 +3,7 @@
 
 
 .portfolio {
-  background-color: $linkgrey;
+  background-color: $stone;
   height: 80vh;
   width: 90vw;
   margin: 0 auto;
@@ -36,19 +36,24 @@
 
 .skilltile {
   width: 25%;
-  height: auto;
   font-size: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
 
   span {
-    margin: auto 0;
+    margin: auto;
   }
 
   img {
     height: 65%;   
     align-self: center;
     // padding-bottom: 0.5rem;
+  }
+
+  .coderacademy {
+    width: 30%;
+    height: auto;
   }
 }
