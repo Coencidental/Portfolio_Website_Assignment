@@ -2,6 +2,15 @@
   --parallaxopacity: 0;
 }
 
+.introduction {
+  width: 90%;
+  margin: 0 auto;
+  border-left: 0.25rem solid rgb(128, 128, 128);
+  border-right: 0.25rem solid rgb(128, 128, 128);
+  padding: 1rem;
+
+}
+
 .invert {
   filter: invert(100%);
 }
@@ -250,6 +259,10 @@ body {
   margin-right: 20vw;
 
 }
+
+
+
+
 
 @media only screen and (min-width: 475px) {
   .nav-link {

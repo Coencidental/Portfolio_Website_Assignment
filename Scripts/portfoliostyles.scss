@@ -16,12 +16,12 @@
   align-content: center;
   background-color: $stone;
   // padding: 2rem 0;
-  border-bottom: 0.25rem solid $rubble;
+  border-bottom: 0.5rem solid $rubble;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 
   &:first-of-type {
-    border-top: 0.25rem solid $rubble;
+    border-top: 0.5rem solid $rubble;
   }
 }
 
@@ -30,6 +30,7 @@
   text-align: center;
   background-color: rgb(168, 156, 156);
   overflow-y: scroll;
+  padding: 0 0.5rem;
 }
 
 .skilltile {
@@ -53,10 +54,8 @@
   }
 
   .coderacademy {
-    
-    height: 50%;
+    height: 65%;
     width: auto;
     align-self: center;
-    margin: 0 0 2rem 0;
   }
 }

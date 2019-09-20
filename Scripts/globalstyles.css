@@ -2,6 +2,14 @@
   --parallaxopacity: 0;
 }
 
+.introduction {
+  width: 90%;
+  margin: 0 auto;
+  border-left: 0.25rem solid gray;
+  border-right: 0.25rem solid gray;
+  padding: 1rem;
+}
+
 .invert {
   -webkit-filter: invert(100%);
           filter: invert(100%);

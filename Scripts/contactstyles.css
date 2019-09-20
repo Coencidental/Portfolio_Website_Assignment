@@ -2,6 +2,14 @@
   --parallaxopacity: 0;
 }
 
+.introduction {
+  width: 90%;
+  margin: 0 auto;
+  border-left: 0.25rem solid gray;
+  border-right: 0.25rem solid gray;
+  padding: 1rem;
+}
+
 .invert {
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -442,7 +450,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1rem solid darkslategrey;
+  border: 0.5rem solid darkslategrey;
 }
 
 .blogpost {
@@ -499,6 +507,7 @@ body {
   width: 90%;
   height: auto;
   max-width: 10rem;
+  max-height: 100%;
 }
 
 .topbar {

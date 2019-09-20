@@ -2,6 +2,14 @@
   --parallaxopacity: 0;
 }
 
+.introduction {
+  width: 90%;
+  margin: 0 auto;
+  border-left: 0.25rem solid gray;
+  border-right: 0.25rem solid gray;
+  padding: 1rem;
+}
+
 .invert {
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -299,7 +307,6 @@ body {
 }
 
 .BannerSlogan {
-  border: 1px solid red;
   width: 25vw;
   margin-right: 20vw;
 }
@@ -310,7 +317,10 @@ body {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
+  .BannerSlogan {
+    padding-left: 10vw;
+  }
   .nav-link {
     padding-left: 5.5rem;
     padding-right: 5.5rem;
@@ -363,13 +373,13 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: #b6b8b5;
-  border-bottom: 0.25rem solid #371E30;
+  border-bottom: 0.5rem solid #371E30;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
 
 .skillbar:first-of-type {
-  border-top: 0.25rem solid #371E30;
+  border-top: 0.5rem solid #371E30;
 }
 
 .skilldesc {
@@ -377,6 +387,7 @@ body {
   text-align: center;
   background-color: #a89c9c;
   overflow-y: scroll;
+  padding: 0 0.5rem;
 }
 
 .skilltile {
@@ -412,11 +423,10 @@ body {
 }
 
 .skilltile .coderacademy {
-  height: 50%;
+  height: 65%;
   width: auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin: 0 0 2rem 0;
 }
 /*# sourceMappingURL=portfoliostyles.css.map */
