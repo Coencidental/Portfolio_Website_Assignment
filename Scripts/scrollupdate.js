@@ -6,7 +6,7 @@ function resizeHeaderOnScroll() {
   
 
 
-  const percentage = clamp(distanceY / (clamp(screen.width, 350, 450)), 0.0001, 1);
+  const percentage = clamp(distanceY / (clamp(screen.width, 350, 450)), 0, 1);
   // document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', percentage);
     // document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));  
   document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', 1 - (clamp((Math.min(percentage, 80)), 0, 1)));
@@ -25,11 +25,16 @@ var clamp = (number, min, max) => {
   return Math.min(Math.max(number, min), max)
 }
 
-var headerEls;
+var headerEls = document.getElementsByClassName('navbar_linkbox');
 var mainContainer;
-var widths = []
-var paddingsLeft = []
-var paddingsRight = []
+var widths = [];
+var paddingsLeft = [];
+var paddingsRight = [];
+
+for(var i = 0; i < headerEls.length; i++){
+  headerEls[i].style.width = `0px`
+}
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
   // headerEls = document.getElementsByClassName('nav-link')
@@ -51,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', 1);
   document.getElementsByClassName("invert")[0].style.setProperty('filter', `invert(0%)`);
-  mainContainer = document.getElementsByClassName("MainContainer")[0]
-  parallaxopacity = document.getElementsByClassName("ParallaxContainer")[0]
+  mainContainer = document.getElementsByClassName("MainContainer")[0];
+  // parallaxopacity = document.getElementsByClassName("ParallaxContainer")[0]
   mainContainer.addEventListener('scroll', resizeHeaderOnScroll)
   // $(document.body).on('touchmove', resizeHeaderonScroll); 
   mainContainer.addEventListener('touchmove', resizeHeaderOnScroll)
