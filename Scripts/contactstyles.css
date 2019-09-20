@@ -46,6 +46,8 @@ body {
 }
 
 .MainContainer {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   height: 100vh;
   overflow-x: hidden !important;
   overflow-y: auto !important;
@@ -72,20 +74,14 @@ body {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   position: relative;
-  height: 72vh;
+  height: 60vh;
   -webkit-transform: translateZ(-1px) scale(2);
           transform: translateZ(-1px) scale(2);
-  z-index: -1;
   top: 0px;
   background-image: url(../Images/facefinal.svg);
   background-size: 125%;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.ParallaxContainer p {
-  padding: 1rem 0rem;
-  padding-right: 10%;
 }
 
 ::-webkit-scrollbar {
@@ -115,7 +111,6 @@ body {
       align-content: center;
   background-color: #dbdbdb;
   border-radius: 0.25rem;
-  width: auto;
 }
 
 #navbar {
@@ -144,6 +139,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 95vw;
 }
 
 .nav-link:hover {
@@ -166,15 +162,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 0;
-  padding-right: 0;
   height: 100%;
-  max-width: 100%;
   -webkit-transition-duration: 0.05s;
           transition-duration: 0.05s;
   font-size: 1.5rem;
   color: #3d3d3d;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .logo-full > * {
@@ -193,6 +186,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 100vw;
 }
 
 .logo-part {
@@ -228,7 +222,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1rem;
-  max-width: 100vw;
   overflow: hidden;
 }
 
@@ -297,13 +290,29 @@ body {
           filter: invert(100%);
 }
 
-@media only screen and (min-width: 700px) {
+.bannertext {
+  font-size: 1.5rem;
+}
+
+#bannertextsmall {
+  font-size: 0.5rem;
+}
+
+.BannerSlogan {
+  width: 25vw;
+  margin-right: 20vw;
+}
+
+@media only screen and (min-width: 475px) {
   .nav-link {
     padding: 0 5.5rem 0 5.5rem;
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
+  .BannerSlogan {
+    padding-left: 10vw;
+  }
   .nav-link {
     padding-left: 5.5rem;
     padding-right: 5.5rem;
@@ -438,9 +447,8 @@ body {
 
 .blogpost {
   width: 100%;
-  max-height: 20%;
+  height: auto;
   border-bottom: 0.5rem solid #687272;
-  margin: auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,16 +468,37 @@ body {
 }
 
 .post_title {
-  border: 1px solid red;
   width: 20%;
-  height: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
+  background-color: #b6b8b5;
 }
 
 .post_content {
-  width: 80%;
-  height: 100%;
+  width: 60%;
   padding: 0.5rem 1rem;
+}
+
+.post_thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 0;
+  border-left: 0.5rem solid #b6b8b5;
+}
+
+.post_thumbnail img {
+  width: 90%;
+  height: auto;
+  max-width: 10rem;
 }
 
 .topbar {

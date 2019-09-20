@@ -1,6 +1,5 @@
 @import "globalstyles.scss";
 
-
 .portfolio {
   background-color: $stone;
   height: 80vh;
@@ -29,8 +28,8 @@
 .skilldesc {
   width: 75%;
   text-align: center;
-  padding-left: 2rem;
-  background-color: rgb(161, 143, 143);
+  background-color: rgb(168, 156, 156);
+  overflow-y: scroll;
 }
 
 .skilltile {

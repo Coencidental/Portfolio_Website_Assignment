@@ -74,20 +74,14 @@ body {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   position: relative;
-  height: 70vh;
+  height: 60vh;
   -webkit-transform: translateZ(-1px) scale(2);
           transform: translateZ(-1px) scale(2);
-  z-index: -1;
   top: 0px;
   background-image: url(../Images/facefinal.svg);
   background-size: 125%;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.ParallaxContainer p {
-  padding: 1rem 0rem;
-  padding-right: 10%;
 }
 
 ::-webkit-scrollbar {
@@ -296,13 +290,29 @@ body {
           filter: invert(100%);
 }
 
+.bannertext {
+  font-size: 1.5rem;
+}
+
+#bannertextsmall {
+  font-size: 0.5rem;
+}
+
+.BannerSlogan {
+  width: 25vw;
+  margin-right: 20vw;
+}
+
 @media only screen and (min-width: 475px) {
   .nav-link {
     padding: 0 5.5rem 0 5.5rem;
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
+  .BannerSlogan {
+    padding-left: 10vw;
+  }
   .nav-link {
     padding-left: 5.5rem;
     padding-right: 5.5rem;
