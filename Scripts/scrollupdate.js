@@ -12,6 +12,8 @@ function resizeHeaderOnScroll() {
     // document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));  
   document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', 1 - (clamp((Math.min(percentage, 80)), 0, 1)));
   document.getElementsByClassName("invert")[0].style.setProperty('filter', `invert(${100 * (clamp((Math.min(percentage, 100)), 0, 1))}%)`);
+
+  
   for(var i = 0; i < headerEls.length; i++){
     headerEls[i].style.width = `${parseInt(widths[i] * (percentage * 1.31))}px`
     // headerEls[i].style.paddingLeft = `${parseInt(paddingsLeft[i] * percentage)}px`
@@ -59,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.getElementsByClassName("invert")[0].style.setProperty('filter', `invert(0%)`);
   mainContainer = document.getElementsByClassName("MainContainer")[0];
   // parallaxopacity = document.getElementsByClassName("ParallaxContainer")[0]
-  mainContainer.addEventListener('scroll', resizeHeaderOnScroll)
+  mainContainer.addEventListener('scroll', resizeHeaderOnScroll, {passive: true})
   // $(document.body).on('touchmove', resizeHeaderonScroll); 
-  mainContainer.addEventListener('touchmove', resizeHeaderOnScroll)
-  document.body.addEventListener('touchmove', resizeHeaderOnScroll)
+  mainContainer.addEventListener('touchmove', resizeHeaderOnScroll, {passive: true})
+  document.body.addEventListener('touchmove', resizeHeaderOnScroll, {passive: true})
 });
