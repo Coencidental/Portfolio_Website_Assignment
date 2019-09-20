@@ -326,6 +326,18 @@ body {
   font-size: 1.75rem;
 }
 
+.coderimage {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.coderimage img {
+  width: 100%;
+}
+
 @media only screen and (min-width: 475px) {
   .nav-link {
     padding: 0 5.5rem 0 5.5rem;

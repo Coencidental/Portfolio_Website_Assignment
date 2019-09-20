@@ -57,8 +57,8 @@ body {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   height: 100vh;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
+  overflow-x: hidden;
+  overflow-y: scroll !important;
   -webkit-overflow-scrolling: touch;
   background-color: #313131;
 }
@@ -87,8 +87,8 @@ body {
           transform: translateZ(-1px) scale(2);
   top: 0px;
   background-image: url(../Images/facefinal.svg);
-  background-size: 125%;
-  background-position: center;
+  background-size: 130%;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
@@ -299,7 +299,7 @@ body {
 }
 
 .bannertext {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 #bannertextsmall {
@@ -307,8 +307,23 @@ body {
 }
 
 .BannerSlogan {
-  width: 25vw;
-  margin-right: 20vw;
+  width: 45vw;
+  height: 50%;
+  text-shadow: 0 0 0.2rem white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.BannerSlogan span {
+  font-size: 1.75rem;
 }
 
 @media only screen and (min-width: 475px) {
@@ -355,11 +370,12 @@ body {
   height: 80vh;
   width: 90vw;
   margin: 0 auto;
+  padding: 0.25rem 0 0 0;
 }
 
 .skillbar {
   width: 100%;
-  height: 25%;
+  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,10 +439,22 @@ body {
 }
 
 .skilltile .coderacademy {
-  height: 65%;
+  height: 55%;
   width: auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+@media only screen and (min-width: 900px) {
+  .skilltile {
+    font-size: 6rem;
+  }
+  .skilltile .coderacademy {
+    height: 75%;
+    width: auto;
+  }
 }
 /*# sourceMappingURL=portfoliostyles.css.map */
