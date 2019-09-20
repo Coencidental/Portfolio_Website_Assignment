@@ -61,9 +61,10 @@ body {
 .MainContainer {
   transform-style: preserve-3d;
   height: 100vh;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  -webkit-overflow-scrolling: scroll;
+  // overflow-x: hidden !important;
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch;
   background-color: $linkgrey;
   // margin-top: 2rem;
 }
@@ -82,8 +83,8 @@ body {
   // z-index: -1;
   top: 0px;
   background-image: url(../Images/facefinal.svg);
-  background-size: 125%;
-  background-position: center;
+  background-size: 130%;
+  background-position: right;
   background-repeat: no-repeat;
 
   // p {
@@ -249,7 +250,7 @@ body {
 }
 
 .bannertext {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 #bannertextsmall {
@@ -257,8 +258,16 @@ body {
 }
 
 .BannerSlogan {
-  width: 25vw;
-  margin-right: 20vw;
+  width: 45vw;
+  height: 50%;
+  text-shadow: 0 0 0.2rem rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  span {
+    font-size: 1.75rem;
+  }
 
 }
 
