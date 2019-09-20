@@ -1,6 +1,6 @@
 function resizeHeaderOnScroll() {
-  let distanceY = Math.max(document.body.scrollTop, mainContainer.scrollTop)
-  // let distanceY = mainContainer.scrollTop;
+  let distanceY = Math.max(document.body.scrollTop, mainContainer.scrollTop, window.screenTop)
+  // let distanceY = Math.max(document.screenTop, mainContainer.scrollTop)
 
   // window.pageYOffset
   // mainContainer.scrollTop;
@@ -33,7 +33,7 @@ var paddingsLeft = [];
 var paddingsRight = [];
 
 for(var i = 0; i < headerEls.length; i++){
-  headerEls[i].style.width = 0;
+  headerEls[i].style.width = `${0}px`
 }
 
 
