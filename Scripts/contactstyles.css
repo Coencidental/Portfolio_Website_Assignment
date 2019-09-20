@@ -403,17 +403,18 @@ body {
           filter: grayscale(0%);
 }
 
-.contactcard a {
+.contactcard span {
   width: 100%;
   height: 100%;
-}
-
-.contactcard span {
-  padding: 3.5rem 0 0 0;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .contactme_container {
-  width: 100%;
+  width: 90vw;
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,6 +431,8 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
+  border-left: 0.5rem solid darkslategrey;
+  border-left: 0.5rem solid darkslategrey;
 }
 
 .linkedback {
@@ -437,7 +440,7 @@ body {
 }
 
 .blog_container {
-  width: 100%;
+  width: 90vw;
   height: auto;
   background-color: white;
   display: -webkit-box;
@@ -451,6 +454,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border: 0.5rem solid darkslategrey;
+  margin: 0 auto;
 }
 
 .blogpost {
@@ -495,7 +499,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 20%;
-  height: 100%;
+  height: 20%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
