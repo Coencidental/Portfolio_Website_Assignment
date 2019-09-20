@@ -63,7 +63,7 @@ body {
   height: 100vh;
   overflow-x: hidden !important;
   overflow-y: auto !important;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: scroll;
   background-color: $linkgrey;
   // margin-top: 2rem;
 }
