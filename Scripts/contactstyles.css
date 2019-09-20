@@ -433,7 +433,7 @@ body {
 .contactcard span {
   height: 100%;
   width: 100%;
-  padding: 5rem;
+  padding: 5rem 0;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;

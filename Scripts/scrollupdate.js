@@ -1,6 +1,6 @@
 function resizeHeaderOnScroll() {
-  // let distanceY = Math.max(document.body.scrollTop, mainContainer.scrollTop)
-  let distanceY = mainContainer.scrollTop;
+  let distanceY = Math.max(document.body.scrollTop, mainContainer.scrollTop)
+  // let distanceY = mainContainer.scrollTop;
 
   // window.pageYOffset
   // mainContainer.scrollTop;
@@ -13,7 +13,7 @@ function resizeHeaderOnScroll() {
   document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', 1 - (clamp((Math.min(percentage, 80)), 0, 1)));
   document.getElementsByClassName("invert")[0].style.setProperty('filter', `invert(${100 * (clamp((Math.min(percentage, 100)), 0, 1))}%)`);
   for(var i = 0; i < headerEls.length; i++){
-    headerEls[i].style.width = `${parseInt(widths[i] * (percentage * 1.1))}px`
+    headerEls[i].style.width = `${parseInt(widths[i] * (percentage * 1.31))}px`
     // headerEls[i].style.paddingLeft = `${parseInt(paddingsLeft[i] * percentage)}px`
     // headerEls[i].style.paddingRight = `${parseInt(paddingsRight[i] * percentage)}px`
   }
