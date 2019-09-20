@@ -352,12 +352,17 @@ body {
 
 .purposecontainer {
   width: 90vw;
-  height: 100%;
-  background-color: #dbdbdb;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #242424;
 }
 
 .mypurpose {
+  width: 80%;
+  border-radius: 0.25rem;
+  margin: auto;
   padding: 2rem;
+  background-color: #dbdbdb;
 }
 
 .mypurpose h2 {

@@ -2,12 +2,17 @@
 
 .purposecontainer {
   width: 90vw;
-  height: 100%;
-  background-color: $offwhite;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: $offwhiteinvert;
 }
 
 .mypurpose {
+  width: 80%;
+  border-radius: 0.25rem;
+  margin: auto;
   padding: 2rem;
+  background-color: $offwhite;
 
   h2 {
     margin-bottom: 2rem;
