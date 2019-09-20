@@ -1,4 +1,4 @@
-@import 'globalstyles.css';
+@import 'globalstyles.scss';
 
 .blog {
   width: 100%;
@@ -14,22 +14,29 @@
 }
 
 .contactcard {
+  filter: grayscale(100%);
+  width: 50%;
+  height: 50%;
   text-align: center;
   transition: all 0.5s;
   opacity: 0.75;
   font-size: 4rem;
-  margin: 0 auto;
+  // margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  width: 50%;
-  height: 50%;
+  align-content: baseline;
+
+  .fa {
+    color: $rubble;
+  }
+  
 
   &:hover {
     // transform: scaleX(1.05);
     // z-index: 2;
     opacity: 1;
+    filter: grayscale(0%)
   }
 
   a {
@@ -38,7 +45,7 @@
   }
 
   span {
-    align-self: center;
+    padding: 3.5rem 0 0 0;
   }
 }
 
@@ -66,20 +73,39 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 0.5rem solid darkslategrey;
+  border: 1rem solid darkslategrey;
 }
 
 .blogpost {
   width: 100%;
-  height: 20%;
-  height: 4rem;
-  text-align: center;
-  border-bottom: 0.5rem solid darkslategrey;
+  max-height: 20%;
+  border-bottom: 0.5rem solid rgb(104, 114, 114);
   margin: auto 0;
+
+  display: flex;
+  flex-direction: row;
+
+  &:first-of-type {
+    border-top: 0.5rem solid darkslategrey;
+  }
 
   h3 {
     text-decoration: none;
+    text-align: center;
   }
+}
+
+.post_title {
+  border: 1px solid red;
+  width: 20%;
+  height: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.post_content {
+  width: 80%;
+  height: 100%;
+  padding: 0.5rem 1rem;
 }
 
 .topbar {

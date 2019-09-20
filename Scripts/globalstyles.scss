@@ -12,6 +12,8 @@ $offwhite: rgb(219, 219, 219);
 $linkgrey: rgb(49, 49, 49);
 $redfade: radial-gradient(#750000, #e00000);
 $stone: rgb(185, 164, 164);
+$navtext: rgb(61, 61, 61);
+
 
 * {
   margin: none;
@@ -47,7 +49,7 @@ body {
 
 // This is the container of the entire page, and will scroll to display new content as you move through the page.
 .MainContainer {
-  // transform-style: preserve-3d;
+  transform-style: preserve-3d;
   height: 100vh;
   overflow-x: hidden !important;
   overflow-y: auto !important;
@@ -65,7 +67,7 @@ body {
   flex-wrap: wrap;
   flex: 1 0 auto;
   position: relative;
-  height: 72vh;
+  height: 70vh;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
   top: 0px;
@@ -103,7 +105,6 @@ body {
   align-content: center;
   background-color: $offwhite;
   border-radius: 0.25rem;
-  width: auto;
 }
 
 
@@ -119,6 +120,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  max-width: 95vw;
 }
 
 
@@ -138,14 +140,12 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-left: 0;
-  padding-right: 0;
   height: 100%;
-  max-width: 100%;
+  // max-width: 100%;
   transition-duration: 0.05s;
   font-size: 1.5rem;
-  color: rgb(87, 87, 87);
-  overflow: hidden;
+  color: $navtext;
+  overflow: auto;
 }
 
 
@@ -156,6 +156,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  max-width: 100vw;
 }
 
 .logo-part {
@@ -173,7 +174,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  max-width: 100vw;
+  // max-width: 100vw;
   overflow: hidden;
 }
 
@@ -244,7 +245,7 @@ body {
   filter: invert(100%);
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 475px) {
   .nav-link {
     padding: 0 5.5rem 0 5.5rem;
   }

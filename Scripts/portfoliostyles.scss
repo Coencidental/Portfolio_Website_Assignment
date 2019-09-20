@@ -1,7 +1,6 @@
 @import "globalstyles.scss";
 
 
-
 .portfolio {
   background-color: $stone;
   height: 80vh;
@@ -36,11 +35,13 @@
 
 .skilltile {
   width: 25%;
+  height: 100%;
   font-size: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  align-items: center;
 
   span {
     margin: auto;
@@ -53,7 +54,10 @@
   }
 
   .coderacademy {
-    width: 30%;
-    height: auto;
+    
+    height: 50%;
+    width: auto;
+    align-self: center;
+    margin: 0 0 2rem 0;
   }
 }
