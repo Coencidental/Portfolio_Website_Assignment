@@ -344,11 +344,14 @@ body {
 }
 
 .copyright {
-  width: 100%;
+  width: 80%;
   padding: 1rem 0;
   background-color: #371E30;
   color: #dbdbdb;
   text-align: center;
+  position: relative;
+  bottom: 0;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 475px) {
@@ -520,9 +523,10 @@ body {
   border-top: 0.5rem solid darkslategrey;
 }
 
-.blogpost h3 {
+.blogpost h2 {
   text-decoration: none;
   text-align: center;
+  padding: 0.5rem 0;
 }
 
 .post_title {
@@ -553,10 +557,10 @@ body {
 
 .post_thumbnail img {
   max-height: 20vh;
-  width: 100%;
-  height: auto;
+  height: 12.5vh;
+  width: auto;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 0.25rem;
   margin: auto;
 }
 
@@ -579,7 +583,7 @@ body {
 @media only screen and (min-width: 900px) {
   .post_thumbnail img {
     width: 50%;
-    height: 40%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=contactstyles.css.map */

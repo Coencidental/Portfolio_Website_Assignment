@@ -4,7 +4,6 @@
 
   <link rel="preload" href="Scripts/globalstyles.css" as="style">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway&display=swap" as="font">
-  <!-- <link rel="preload" href="Scripts/scrollupdate.js" as="script"> -->
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="font">
   <link rel="preload" href="Scripts/portfoliostyles.css" as="style">
   <link rel="preload" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -13,7 +12,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link href="Scripts/portfoliostyles.css" rel="stylesheet">
   <link href="Scripts/globalstyles.css" rel="stylesheet">
-  <!-- <script src="Scripts/scrollupdate.js"></script> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <meta name="description" content="Coen Isaac Drexler's web development portfolio - creative to creator, a 6 month progressive journey in programming.">
@@ -25,98 +23,99 @@
   
 </head>
 <body>
-    <div class="topbar inverted">
-        <div class="MediaLinks">
-          <a href="https://github.com/Coencidental" rel="noopener" target="_blank" aria-label="Github Link" alt="Github Link"><span class="fa fa-github" id="github"></span></a>
-          <a href="https://www.linkedin.com/in/coendrexler" rel="noopener" target="_blank" aria-label="LinkedIn Link" alt="LinkedIn Link"><span class="fa fa-linkedin" id="linkedin"></span></a>
-          <a href="mailto:cdrexler1999@gmail.com" rel="noopener" target="_blank" aria-label="Direct Email Link" alt="Direct Email Link"><span class="fa fa-envelope-o" id="email"></span></a>
-        </div> 
-  
-        <div class="navbar_container">
-            <nav id="navbar">
-              <div class="logo-full">
+  <div class="topbar inverted">
+    <div class="MediaLinks">
+      <a href="https://github.com/Coencidental" rel="noopener" target="_blank" aria-label="Github Link" alt="Github Link"><span class="fa fa-github" id="github"></span></a>
+      <a href="https://www.linkedin.com/in/coendrexler" rel="noopener" target="_blank" aria-label="LinkedIn Link" alt="LinkedIn Link"><span class="fa fa-linkedin" id="linkedin"></span></a>
+      <a href="mailto:cdrexler1999@gmail.com" rel="noopener" target="_blank" aria-label="Direct Email Link" alt="Direct Email Link"><span class="fa fa-envelope-o" id="email"></span></a>
+    </div> 
       
-                <span class="logo-part" ><img class="navbarlogoleft" src="Images/logo_half.png" alt="Left half of Colourblind Development logo"></span>
+    <div class="navbar_container">
+      <nav id="navbar">
+        <div class="logo-full">
+          
+          <span class="logo-part" ><img class="navbarlogoleft" src="Images/logo_half.png" alt="Left half of Colourblind Development logo"></span>
+          
+            <div class="navbar_linkbox">
+              <a class="nav-link" href="portfolio.html">WORK</a>
+              <a class="nav-link" href="purpose.html">PURPOSE</a>
+            </div>
+          
+          <span class="logo-part hover-expand" >|</span>
+          
+            <div class="navbar_linkbox">
+              <a class="nav-link" href="contact.html">FIND</a>
+              <a class="nav-link" href="index.html">HOME</a>
+            </div>
+          
+          <span class="logo-part" ><img class="navbarlogoright" src="Images/logo_half.png" alt="Right half of Colourblind Development logo"></span>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <article class="portfolio">
+
+    <header tabindex="0"><h1 class="textcenter">Qualifications and Skills</h1></header>
       
-                <div class="navbar_linkbox">
-                    <a class="nav-link" href="portfolio.html">WORK</a>
-                    <a class="nav-link" href="purpose.html">PURPOSE</a>
-                </div>
-      
-                <span class="logo-part hover-expand" >|</span>
-      
-                <div class="navbar_linkbox">
-                    <a class="nav-link" href="contact.html">FIND</a>
-                    <a class="nav-link" href="index.html">HOME</a>
-                </div>
-      
-                <span class="logo-part" ><img class="navbarlogoright" src="Images/logo_half.png" alt="Right half of Colourblind Development logo"></span>
-      
-              </div>
-            </nav>
-          </div>
-  
+    <!-- Reusable Skill Bar with icon section, and experience description -->
+
+    <div class="skillbar">
+      <div class="skilltile">
+        <span class="devicon-html5-plain" alt="Icon of HTML 5 Symbol"></span>
       </div>
+      <div class="skilldesc">
+        <p tabindex="0">I have a fundamental level of knowledge in the use of HTML and HTML5 for document structuring and markup.</p>
+      </div>
+    </div>
 
-      <article class="portfolio">
+    <div class="skillbar">
+      <div class="skilltile">
+        <span class="devicon-css3-plain" alt="Icon of CSS 3 Symbol"></span>
+      </div>
+      <div class="skilldesc">
+        <p tabindex="0">Alongside HTML, I have corresponding CSS3 design skills.  I am able to lay out and design a page fairly comfortable, and am beginning to learn to use more abstract methods of interactive design, such as the homepage of this website.</p>
+      </div>
+    </div>
 
-        <h1 class="textcenter">Qualifications and Skills</h1>
+    <div class="skillbar">
+      <div class="skilltile">
+        <span class="devicon-ruby-plain" alt="Icon of Ruby Programming Language Symbol"></span>
+      </div>
+      <div class="skilldesc">
+        <p tabindex="0">I understand the fundamental aspects of Object Oriented Programming, the general Ruby syntax and programming process, and am now learning to expand my abilities with such languages by using Ruby to build more.</p>
+      </div>
+    </div>
+
+    <div class="skillbar">
+      <div class="skilltile">
+        <img src="https://img.icons8.com/ios/100/000000/audio-wave.png" alt="Audio waveform symbol accompanying a skill section about Coen Drexler's audio experience">
+      </div>
+      <div class="skilldesc">
+        <p tabindex="0">My forté of experience is in audio.  From the production, post production, preparation, performance, design, manipulation, restoration, and anything else you could want.</p>
+      </div>
+    </div>
+
+    <div class="skillbar">
+      <div class="skilltile">
+        <span class="devicon-javascript-plain" alt="Icon of JavaScript Programming Language Symbol"></span>
+      </div>
+      <div class="skilldesc">
+        <p tabindex="0">In my time learning to develop basic static websites, I have learned to implement and understand basic javascript elements.  On this website for example, the home page navbar uses scroll linked width manipulation to hide the links until you have scroll the appropriate distance.</p>
+      </div>
+    </div>
+
+    <div class="skillbar">
+      <div class="skilltile">
+        <img class="coderacademy"src="Images/CA.svg" alt="Coder Academy Logo">
+      </div>
+      <div class="skilldesc">
+        <p tabindex="0">Studying at Coder Academy in Brisbane Australia, I have thus far covered fundamental aspects of pure Ruby programming, HTML markup, CSS, accessibility, programming orientation, and more.  This course began on the 19th of August 2019, and will run for 6 months.  During this time, we will cover Ruby on Rails, Javascript, and far more intricate/abstract concepts and practises of development.</p>
+      </div>
+    </div>
       
-        <div class="skillbar">
-          <div class="skilltile">
-              <span class="devicon-html5-plain"></span>
-          </div>
-          <div class="skilldesc">
-              <p>I have a fundamental level of knowledge in the use of HTML and HTML5 for document structuring and markup.</p>
-          </div>
-        </div>
-
-        <div class="skillbar">
-          <div class="skilltile">
-            <span class="devicon-css3-plain"></span>
-          </div>
-          <div class="skilldesc">
-            <p>Alongside HTML, I have corresponding CSS3 design skills.  I am able to lay out and design a page fairly comfortable, and am beginning to learn to use more abstract methods of interactive design, such as the homepage of this website.</p>
-          </div>
-        </div>
-
-        <div class="skillbar">
-          <div class="skilltile">
-              <span class="devicon-ruby-plain"></span>
-          </div>
-          <div class="skilldesc">
-              <p>I understand the fundamental aspects of Object Oriented Programming, the general Ruby syntax and programming process, and am now learning to expand my abilities with such languages by using Ruby to build more.</p>
-          </div>
-        </div>
-
-        <div class="skillbar">
-          <div class="skilltile">
-              <img src="https://img.icons8.com/ios/100/000000/audio-wave.png" alt="Audio waveform symbol accompanying a skill section about Coen Drexler's audio experience">
-          </div>
-          <div class="skilldesc">
-            <p>My forté of experience is in audio.  From the production, post production, preparation, performance, design, manipulation, restoration, and anything else you could want.</p>
-          </div>
-        </div>
-
-        <div class="skillbar">
-          <div class="skilltile">
-            <span class="devicon-javascript-plain"></span>
-          </div>
-          <div class="skilldesc">
-            <p>In my time learning to develop basic static websites, I have learned to implement and understand basic javascript elements.  On this website for example, the home page navbar uses scroll linked width manipulation to hide the links until you have scroll the appropriate distance.</p>
-          </div>
-        </div>
-
-        <div class="skillbar">
-          <div class="skilltile">
-              <img class="coderacademy"src="Images/CA.svg" alt="Coder Academy Logo">
-          </div>
-          <div class="skilldesc">
-              <p>Studying at Coder Academy in Brisbane Australia, I have thus far covered fundamental aspects of pure Ruby programming, HTML markup, CSS, accessibility, programming orientation, and more.  This course began on the 19th of August 2019, and will run for 6 months.  During this time, we will cover Ruby on Rails, Javascript, and far more intricate/abstract concepts and practises of development.</p>
-          </div>
-        </div>
-      
-      </article>
+  </article>
   
 </body>
 </html>

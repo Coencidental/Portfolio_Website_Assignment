@@ -42,7 +42,7 @@ for(var i = 0; i < headerEls.length; i++){
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  // headerEls = document.getElementsByClassName('nav-link')
+  headerEls = document.getElementsByClassName('nav-link')
   headerEls = document.getElementsByClassName('navbar_linkbox')
   for(var i = 0; i < headerEls.length; i++){
     var width = window.getComputedStyle(headerEls[i], null).getPropertyValue('width')

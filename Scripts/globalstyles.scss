@@ -8,22 +8,24 @@
   border-left: 0.25rem solid rgb(128, 128, 128);
   border-right: 0.25rem solid rgb(128, 128, 128);
   padding: 1rem;
-
 }
 
 .invert {
   filter: invert(100%);
 }
 
-$scrollread: var(--parallaxopacity);
-$rubble: #371E30;
+// Global Colours
+
+$rubble: #1E191A;
 $offwhite: #dbdbdb;
 $offwhiteinvert: #242424;
 $linkgrey: rgb(49, 49, 49);
-$redfade: radial-gradient(#750000, #e00000);
-$offstone: rgb(151, 144, 144);
+$offstone: #8C8A8C;
 $stone: rgb(182, 184, 181);
-$navtext: rgb(61, 61, 61);
+$navtext: #3D3E3F;
+$granite: #636366;
+
+// Global Page Initialize Settings
 
 * {
   margin: none;
@@ -86,15 +88,9 @@ body {
   background-size: 130%;
   background-position: right;
   background-repeat: no-repeat;
-
-  // p {
-  //   padding: 1rem 0rem;
-  //   padding-right: 10%;
-  // }
-
 }
 
-// Hide parallax window scrollbar
+// Hide the parallax window scrollbar
 
 ::-webkit-scrollbar {
   display: none;
@@ -117,16 +113,15 @@ body {
   align-content: center;
   background-color: $offwhite;
   border-radius: 0.25rem;
-  width: auto;
+  max-width: auto;
 }
 
 #navbar {
   display: flex;
   flex-direction: row;
-  border-top: 0.25rem solid rgb(128, 128, 128);
-  border-bottom: 0.25rem solid rgb(128, 128, 128);
+  border-top: 0.25rem solid $granite;
+  border-bottom: 0.25rem solid $granite;
   justify-content: center;
-  // align-content: center;
 }
 
 #navbar > .logo-full {
@@ -153,7 +148,8 @@ body {
   transition-duration: 0.05s;
   font-size: 1.3rem;
   color: $navtext;
-  overflow: visible;
+  overflow-x: visible;
+  // text-align: center;
 }
 
 
