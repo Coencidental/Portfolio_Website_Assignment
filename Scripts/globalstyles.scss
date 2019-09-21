@@ -153,7 +153,7 @@ body {
   transition-duration: 0.05s;
   font-size: 1.3rem;
   color: $navtext;
-  overflow: auto;
+  overflow: visible;
 }
 
 
@@ -185,6 +185,7 @@ body {
   max-width: 100%;
   overflow: auto;
 }
+
 
 .fa {
   transition: color 0.5s;
@@ -286,8 +287,13 @@ body {
   }
 }
 
-
-
+.copyright {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: $rubble;
+  color: $offwhite;
+  text-align: center;
+}
 
 @media only screen and (min-width: 475px) {
   .nav-link {

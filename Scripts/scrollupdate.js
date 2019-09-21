@@ -8,8 +8,10 @@ function resizeHeaderOnScroll() {
 
 
   const percentage = clamp(distanceY / (clamp(screen.width, 350, 450)), 0, 1);
+
   // document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', percentage);
-    // document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));  
+    // document.getElementsByClassName("MainContainer")[0].style.setProperty('--parallaxopacity', clamp((0.01/percentage*10), 0, 1));
+      
   document.getElementsByClassName("ParallaxContainer")[0].style.setProperty('opacity', 1 - (clamp((Math.min(percentage, 80)), 0, 1)));
   document.getElementsByClassName("invert")[0].style.setProperty('filter', `invert(${100 * (clamp((Math.min(percentage, 100)), 0, 1))}%)`);
 

@@ -179,7 +179,7 @@ body {
           transition-duration: 0.05s;
   font-size: 1.3rem;
   color: #3d3d3d;
-  overflow: auto;
+  overflow: visible;
 }
 
 .logo-full > * {
@@ -341,6 +341,14 @@ body {
 
 .coderimage img {
   width: 100%;
+}
+
+.copyright {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #371E30;
+  color: #dbdbdb;
+  text-align: center;
 }
 
 @media only screen and (min-width: 475px) {
