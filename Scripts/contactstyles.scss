@@ -108,7 +108,8 @@
   width: 20%;
   height: 100%;
   background-color: $offstone;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin: auto 0;
 }
 
 .post_thumbnail {
@@ -118,18 +119,20 @@
   height: auto;
   justify-content: center;
   align-content: center;
-  // border-left: 0.5rem solid rgb(104, 114, 114);
-  margin: auto;
+  border-left: 0.5rem solid $granite;
+  margin: 0 auto;
   overflow: hidden;
-  
+  border-radius: 0.5rem;
 
   img {
     // margin-right: 1rem;
-    max-height: 20vh;
-    height: 12.5vh;
+    max-width: 90%;
+    max-height: 95%;
     width: auto;
-    border-radius: 1rem;
-    padding: 0.25rem;
+    height: auto;
+
+    border-radius: 0.5rem;
+    // padding: 0.25rem;
     margin: auto;
     
   }

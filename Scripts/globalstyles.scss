@@ -21,7 +21,8 @@ $offwhite: #dbdbdb;
 $offwhiteinvert: #242424;
 $linkgrey: rgb(49, 49, 49);
 $offstone: #8C8A8C;
-$stone: rgb(182, 184, 181);
+// $stone: rgb(182, 184, 181);
+$stone: #B0B0B2;
 $navtext: #3D3E3F;
 $granite: #636366;
 
@@ -114,6 +115,7 @@ body {
   background-color: $offwhite;
   border-radius: 0.25rem;
   max-width: auto;
+  border-bottom: 0.25rem solid $offwhite;
 }
 
 #navbar {

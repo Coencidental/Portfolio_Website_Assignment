@@ -27,7 +27,7 @@
 }
 
 body {
-  background-color: #371E30;
+  background-color: #1E191A;
   padding: none;
   margin: none;
 }
@@ -119,7 +119,7 @@ body {
       align-content: center;
   background-color: #dbdbdb;
   border-radius: 0.25rem;
-  width: auto;
+  max-width: auto;
 }
 
 #navbar {
@@ -130,8 +130,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: 0.25rem solid gray;
-  border-bottom: 0.25rem solid gray;
+  border-top: 0.25rem solid #636366;
+  border-bottom: 0.25rem solid #636366;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -178,8 +178,8 @@ body {
   -webkit-transition-duration: 0.05s;
           transition-duration: 0.05s;
   font-size: 1.3rem;
-  color: #3d3d3d;
-  overflow: visible;
+  color: #3D3E3F;
+  overflow-x: visible;
 }
 
 .logo-full > * {
@@ -242,7 +242,7 @@ body {
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   z-index: 2;
-  color: #371E30;
+  color: #1E191A;
 }
 
 .fa:hover {
@@ -346,7 +346,7 @@ body {
 .copyright {
   width: 80%;
   padding: 1rem 0;
-  background-color: #371E30;
+  background-color: #1E191A;
   color: #dbdbdb;
   text-align: center;
   position: relative;
@@ -439,7 +439,7 @@ body {
 }
 
 .contactcard .fa {
-  color: #371E30;
+  color: #1E191A;
 }
 
 .contactcard:hover {
@@ -477,8 +477,8 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  border-left: 0.5rem solid #371E30;
-  border-right: 0.5rem solid #371E30;
+  border-left: 0.5rem solid #1E191A;
+  border-right: 0.5rem solid #1E191A;
 }
 
 .linkedback {
@@ -499,7 +499,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 0.5rem solid #371E30;
+  border: 0.5rem solid #1E191A;
   margin: 0 auto;
 }
 
@@ -507,7 +507,7 @@ body {
   width: 100%;
   height: auto;
   border-bottom: 0.5rem solid #687272;
-  background-color: #979090;
+  background-color: #8C8A8C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,8 +532,9 @@ body {
 .post_title {
   width: 20%;
   height: 100%;
-  background-color: #979090;
-  font-size: 1rem;
+  background-color: #8C8A8C;
+  font-size: 0.8rem;
+  margin: auto 0;
 }
 
 .post_thumbnail {
@@ -551,23 +552,25 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: auto;
+  border-left: 0.5rem solid #636366;
+  margin: 0 auto;
   overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 .post_thumbnail img {
-  max-height: 20vh;
-  height: 12.5vh;
+  max-width: 90%;
+  max-height: 95%;
   width: auto;
-  border-radius: 1rem;
-  padding: 0.25rem;
+  height: auto;
+  border-radius: 0.5rem;
   margin: auto;
 }
 
 .post_content {
   width: 60%;
   padding: 0 1rem;
-  background-color: #b6b8b5;
+  background-color: #B0B0B2;
   overflow-x: hidden;
   overflow-y: scroll;
 }
