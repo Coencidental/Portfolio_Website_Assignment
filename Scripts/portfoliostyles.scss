@@ -49,7 +49,8 @@
   }
 
   img {
-    height: 65%;   
+    height: 55%;   
+    width: auto;
     align-self: center;
     // padding-bottom: 0.5rem;
   }
@@ -58,7 +59,7 @@
     height: 55%;
     width: auto;
     align-self: center;
-    filter: brightness(50%);
+    filter: brightness(40%);
   }
 }
 

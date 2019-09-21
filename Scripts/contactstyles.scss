@@ -119,11 +119,13 @@
   align-content: center;
   // border-left: 0.5rem solid rgb(104, 114, 114);
   margin: auto;
+  overflow: hidden;
   
 
   img {
     // margin-right: 1rem;
     max-height: 20vh;
+    width: 100%;
     height: auto;
     border-radius: 1rem;
     padding: 0.5rem;

@@ -548,10 +548,12 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   margin: auto;
+  overflow: hidden;
 }
 
 .post_thumbnail img {
   max-height: 20vh;
+  width: 100%;
   height: auto;
   border-radius: 1rem;
   padding: 0.5rem;
