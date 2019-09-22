@@ -1,0 +1,166 @@
+@import 'globalstyles.scss';
+
+.blog {
+  width: 100%;
+}
+
+.ContactContainer {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactcard {
+  filter: grayscale(100%);
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  transition: all 0.5s;
+  opacity: 0.75;
+  font-size: 4rem;
+  // margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: baseline;
+  text-shadow: 0 0 0.25rem white;
+
+  .fa {
+    color: $rubble;
+  }
+  
+  &:hover {
+    opacity: 1;
+    filter: grayscale(0%)
+  }
+
+  // a {
+  //   height: 100%;
+  // }
+
+  span {
+    height: 100%;
+    width: 100%;
+    padding: 5rem 0;
+    
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+.contactme_container {
+  width: 90vw;
+  height: 65vh;
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-left: 0.5rem solid $rubble;
+  border-right: 0.5rem solid $rubble;
+
+}
+
+.linkedback {
+  background-color: #0077B5;
+}
+
+.blog_container {
+  width: 90vw;
+  height: auto;
+  background-color: $offwhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.5rem solid $rubble;
+  margin: 0 auto;
+}
+
+.blogpost {
+  width: 100%;
+  height: auto;
+  border-bottom: 0.5rem solid rgb(104, 114, 114);
+  background-color: $offstone;
+  // margin: auto 0;
+
+  display: flex;
+  flex-direction: row;
+  max-height: 25vh;
+  overflow: hidden;
+
+  &:first-of-type {
+    border-top: 0.5rem solid darkslategrey;
+  }
+
+  h2 {
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+
+.post_title {
+  width: 20%;
+  height: 100%;
+  background-color: $offstone;
+  font-size: 0.8rem;
+  margin: auto 0;
+}
+
+.post_thumbnail {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+  border-left: 0.5rem solid $granite;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.5rem;
+
+  img {
+    // margin-right: 1rem;
+    max-width: 90%;
+    max-height: 95%;
+    width: auto;
+    height: auto;
+
+    border-radius: 0.5rem;
+    // padding: 0.25rem;
+    margin: auto;
+    
+  }
+}
+
+.post_content {
+  width: 60%;
+  padding: 0 1rem;
+  background-color: $stone;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+
+.topbar {
+  z-index: 4;
+}
+
+#orange {
+  background-color: #ff7700;
+}
+
+@media only screen and (min-width: 900px) {
+  .post_thumbnail {
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+}
