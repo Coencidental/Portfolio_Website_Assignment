@@ -120,6 +120,7 @@ body {
   background-color: #dbdbdb;
   border-radius: 0.25rem;
   max-width: auto;
+  border-bottom: 0.25rem solid #dbdbdb;
 }
 
 #navbar {
@@ -482,7 +483,7 @@ body {
 }
 
 .linkedback {
-  background-color: #0077B5;
+  background-color: #00a6ff;
 }
 
 .blog_container {
