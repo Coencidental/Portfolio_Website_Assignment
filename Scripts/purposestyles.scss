@@ -9,7 +9,7 @@
 }
 
 .mypurpose {
-  width: 80%;
+  width: 100%;
   border-radius: 0.25rem;
   margin: auto;
   padding: 2rem 1rem;
@@ -18,5 +18,11 @@
 
   h2 {
     margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .mypurpose {
+    width: 80%;
   }
 }

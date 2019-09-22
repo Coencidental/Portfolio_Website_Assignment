@@ -120,6 +120,7 @@ body {
   background-color: #dbdbdb;
   border-radius: 0.25rem;
   max-width: auto;
+  border-bottom: 0.25rem solid #dbdbdb;
 }
 
 #navbar {
@@ -403,7 +404,7 @@ body {
 }
 
 .mypurpose {
-  width: 80%;
+  width: 100%;
   border-radius: 0.25rem;
   margin: auto;
   padding: 2rem 1rem;
@@ -413,5 +414,11 @@ body {
 
 .mypurpose h2 {
   margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .mypurpose {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=purposestyles.css.map */
